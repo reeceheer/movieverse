@@ -1,12 +1,14 @@
+import React from 'react'
+import { MovieState } from "./Context/MovieContext";
+import Hero from './components/Hero/Hero';
 import './App.css';
 
 const App = () => {
   return (
-    <div className="App">
-      <h1>movieverse</h1>
-    </div>
-
+    <MovieState>
+      <Hero />
+    </MovieState>
   );
-}
+};
 
 export default App;

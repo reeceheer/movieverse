@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="214" height="66" viewBox="0 0 214 66">
+  <defs>
+    <pattern id="pattern" width="1" height="1" viewBox="148.132 0 214 66">
+      <image preserveAspectRatio="none" width="214" height="66" xlink:href="../../../../Downloads/LogoMakr-6WQIMy.png"/>
+    </pattern>
+  </defs>
+  <rect id="LogoMakr-6WQIMy" width="214" height="66" fill="url(#pattern)"/>
+</svg>
