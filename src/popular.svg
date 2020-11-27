@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="1149" viewBox="0 0 1920 1149">
+  <defs>
+    <radialGradient id="radial-gradient" cx="0.5" cy="0.5" r="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4a026d"/>
+      <stop offset="1" stop-color="#22045e"/>
+    </radialGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_588" data-name="Rectangle 588" width="1920" height="1149" fill="#fff"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_567" data-name="Rectangle 567" width="2062" height="1235"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_561" data-name="Rectangle 561" width="3406" height="1871" fill="url(#radial-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_14" data-name="Mask Group 14" clip-path="url(#clip-path)">
+    <g id="Component_6_4" data-name="Component 6 – 4" transform="translate(-142)">
+      <g id="Mask_Group_7" data-name="Mask Group 7" clip-path="url(#clip-path-2)">
+        <g id="Component_10_4" data-name="Component 10 – 4" transform="translate(-1332)">
+          <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path-3)">
+            <path id="Path_932" data-name="Path 932" d="M119.772,300.749s550.6,966.484,2161.405,1399.74,1464.366,739.778,1464.366,739.778l263.586-1261.455L3815.833,61.777Z" transform="translate(-120.833 -300.749)" fill="url(#radial-gradient)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

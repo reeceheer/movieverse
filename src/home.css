@@ -1,0 +1,38 @@
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+
+    h1{
+        padding-left: 220px;
+        padding-top: 260px;
+        font-size: 40px;
+        letter-spacing: 0 10px;
+    }
+    .homeBtn{
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        border: 2px solid #5F1B91;
+        background: transparent;
+        padding: 10px 16px;
+        margin-top: 50px;
+        margin-left: 220px;
+        width: 190px;
+        color: #ffffff;
+    }
+
+    body.HomeBody {
+        background-image: url(bg.svg);
+      }
+      
+    body.PopularBody {
+        background-image: url(popular.svg);
+    }
+
+    body.AboutBody {
+        background-image: url(about.svg);
+    }
+

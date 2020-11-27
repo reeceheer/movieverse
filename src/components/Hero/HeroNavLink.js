@@ -8,16 +8,19 @@ import { MovieContext } from "../../Context/MovieContext";
 const HeroNavLink = ({ btnText }) => {
     const {setHiddenMenu, activeLink, setActiveLink} = useContext(MovieContext);
 
-    return <button onClick={() => {
-        setActiveLink(btnText);
-        setHiddenMenu(true);
-    }} css={styles}
-        style={{color: activeLink === btnText ? "#690AAF" :"#fff" }}
-    
-    >{btnText}
-    </button>
-
-};
+    return (
+        <button
+        //   style={{ color: activeLink === btnText ? "#690AAF" : "#fff" }}
+          css={styles}
+          onClick={() => {
+            setActiveLink(btnText);
+            setHiddenMenu(true);
+          }}
+        >
+          {btnText}
+        </button>
+      );
+    };
 
 const styles = css`
     border: none;

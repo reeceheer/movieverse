@@ -10,17 +10,22 @@ const HeroNavMenu = () => {
 
     return(
     <div css={styles} className={(hiddenMenu ? "hidden" : "") + " heroNavMenu"}>
+        <a href="/Movies">
         <HeroNavLink btnText="Popular"/>
+        </a>
+        <a href="/AllMovies">
         <HeroNavLink btnText="All Movies"/>
-        <HeroNavLink btnText="About"/>
+        </a>
+        <a href="/about">
+        <HeroNavLink btnText="About"/> 
+        </a>
     </div>
     );
 };
 
 const styles = css`
-  padding-left: 80px;
   display: flex;
-  align-items: center;
+  margin-left: 50px;
   @media (max-width: 860px) {
     position: absolute;
     top: 0;
