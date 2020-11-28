@@ -1,6 +1,5 @@
 /** @jsx jsx */
 /** @jsxRuntime classic */
-
 import { css, jsx } from "@emotion/core";
 import { useContext } from 'react';
 import { MovieContext } from "../../Context/MovieContext";
@@ -10,7 +9,7 @@ const HeroNavLink = ({ btnText }) => {
 
     return (
         <button
-        //   style={{ color: activeLink === btnText ? "#690AAF" : "#fff" }}
+        style={{ color: activeLink === btnText ? "#690AAF" : "#fff" }}
           css={styles}
           onClick={() => {
             setActiveLink(btnText);

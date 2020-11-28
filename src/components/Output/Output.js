@@ -5,16 +5,24 @@ import { useContext } from "react";
 import { MovieContext } from "../../Context/MovieContext";
 import Container from "../ReusableComponents/Container";
 import Popular from "../Popular/Popular";
+import Movies from "../Movies/Movies";
+import MoviesButton from "../Movies/MoviesButton";
 
 const Output = () => {
     const {activeLink} = useContext(MovieContext);
 
-
+/* WHEN POPULAR IS CLICKED GETS POPULAR MOVIES FROM API USING FUCNTION IN Popular.js */
     return(
         <div css={styles} className="output">
             {activeLink === "Popular" && (
                 <Container>
                     <Popular />
+                </Container>
+            )}
+            {activeLink === "All Movies" && (
+                <Container>
+                    <Movies />
+                    <MoviesButton />
                 </Container>
             )}
         </div>

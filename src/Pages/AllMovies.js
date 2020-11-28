@@ -10,7 +10,7 @@ const AllMovies = () => {
       <div className="">
       <HeroNav />
       <div>
-          <h1>testing</h1>
+          <h1>fake page</h1>
       </div>
       </div>
     </MovieState>

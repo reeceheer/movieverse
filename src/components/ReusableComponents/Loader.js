@@ -1,4 +1,5 @@
 /** @jsx jsx */
+/** @jsxRuntime classic */
 import { css, jsx } from "@emotion/core";
 
 const Loader = () => <div css={styles} className="loader"></div>;

@@ -13,9 +13,9 @@ const HeroNavMenu = () => {
         <a href="/Movies">
         <HeroNavLink btnText="Popular"/>
         </a>
-        <a href="/AllMovies">
+        {/* <a href="/AllMovies"> */}
         <HeroNavLink btnText="All Movies"/>
-        </a>
+        {/* </a> */}
         <a href="/about">
         <HeroNavLink btnText="About"/> 
         </a>

@@ -10,7 +10,6 @@ const Hero = () => {
     <body className="PopularBody">
         <section css={styles} className="hero">
             <HeroNav />
-            <h3>Popular Movies</h3>
             <Output />
         </section>
     </body>
