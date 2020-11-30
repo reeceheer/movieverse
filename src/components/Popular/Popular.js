@@ -8,12 +8,15 @@ import Container from "../ReusableComponents/Container";
 const Popular = () => {
     const {popularMovies} = useContext(MovieContext);
 
-
     return(
         <div css={styles} className="popularMovies">
             <Container>
                 {popularMovies.results && popularMovies.results.map((popularMoviesItem, index) => (
+                  <div>
                     <img key={index} src={`https://image.tmdb.org/t/p/w400/${popularMoviesItem.poster_path}`} alt="poster" />
+                    <h4 className="itemTitle">{popularMoviesItem.title}</h4>
+                    <h4 className="itemRating">{popularMoviesItem.vote_average}</h4>
+                </div>
                 ))}
             </Container>
         </div>
@@ -27,23 +30,24 @@ const styles = css`
       height: 92vh;
       overflow-y: scroll;
       display: flex;
+      padding-top: 20px;
+      padding-bottom: 20px;
       justify-content: space-between;
       flex-wrap: wrap;
       &::-webkit-scrollbar {
         width: 0;
       }
-      .error {
-        font-size: 38px;
-        color: red;
-        height: 32px;
-      }
+    h4{
+      font-size: 11px;    
+    }
     }
     img {
       width: 100%;
       max-width: 240px;
       height: 360px;
       margin: 10px 0;
-      margin-top: 20px;
+      margin-top: 40px;
+
     }
   }
   @media (max-width: 600px) {

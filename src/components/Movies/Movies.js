@@ -13,11 +13,15 @@ const Movies = () => {
         <div css={styles} className="movies">
             <Container>
                 {movies.results && movies.results.length === 0 && (
-                <h1 className="error">Not found</h1>
+                <h1 className="error">Movie not found</h1>
                 )}
                 {!isLoading ? (
                     movies.results && movies.results.map((movieItem, index) => (
-                        <img key={index} src={`https://image.tmdb.org/t/p/w400/${movieItem.poster_path}` } alt="poster" />
+                      <div>
+                        <img key={index} src={`https://image.tmdb.org/t/p/w400/${movieItem.poster_path}` } alt={"poster"} />
+                        <h4 className="itemTitle">{movieItem.title}</h4>
+                        <h4 className="itemTitle">{movieItem.vote_average}</h4>
+                      </div>
                     ))
                 ): (
                     <Loader />
@@ -40,9 +44,11 @@ const styles = css`
         width: 0;
       }
       .error {
-        font-size: 38px;
+        font-size: 100px;
         color: red;
-        height: 32px;
+      }
+      .itemTitle{
+        font-size: 11px;
       }
     }
     img {

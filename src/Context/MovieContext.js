@@ -21,10 +21,13 @@ export const MovieState = ({ children }) => {
        const popularMoviesResponse = await fetch(
           `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=4` /* fetches the API_KEY state to get access to the movies in tmbd */
           );
+          
     const popularMoviesData = await popularMoviesResponse.json();
          setPopularMovies(popularMoviesData);
+         console.log(popularMoviesData)
     };
 
+ /* function to get all movies from the movie database using my API key */
     const getMovies = async () => {
        const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=${currentPage}` /* fetches the currentPage state which is set to 1 */
        );
@@ -34,6 +37,7 @@ export const MovieState = ({ children }) => {
        }
     };
 
+ /* function to make the movie search work */
     const handleSearch = async (e) => {
        e.preventDefault();
        if(search.trim === '') return;
@@ -44,6 +48,7 @@ export const MovieState = ({ children }) => {
        setShowButton(false);
     };
 
+ /* function to get allow borwsing through previous page and next page */
     const newPage = (direction) => {
       if (direction === "next") {
         setCurrentPage(currentPage + 1);
@@ -53,19 +58,22 @@ export const MovieState = ({ children }) => {
       }
     };
 
+    /* displays the popular movies */
     useEffect(() => {
-       getPopularMovies();
+       getPopularMovies(); 
     },[])
 
+    /* displays all movies on all movies page */
     useEffect(() => {
-       if(search.trim() === ""){
+       if(search.trim() === ""){ 
           setShowButton(true);
        }
       getMovies();
     },[search, currentPage])
 
+    /* allows movies to be displayed when browsing through the pages */
     useEffect(() => {
-      const loadingTimeout = setTimeout(() => {
+      const loadingTimeout = setTimeout(() => { 
          setIsLoading(false);
       }, 100)
       return () => clearTimeout(loadingTimeout);

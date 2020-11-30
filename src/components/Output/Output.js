@@ -33,6 +33,10 @@ const styles = css`
   width: 100%;
   min-height: calc(100vh - 80px);
   display: flex;
+  .Infinity{
+    margin-left: 1062px;
+    position:relative; top:462px;
+  }
   > .container {
     display: flex;
     flex-direction: column;
