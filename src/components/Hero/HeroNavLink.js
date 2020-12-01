@@ -4,12 +4,14 @@ import { css, jsx } from "@emotion/core";
 import { useContext } from 'react';
 import { MovieContext } from "../../Context/MovieContext";
 
+// function to se the Active Link to the Navbar buttons 
+
 const HeroNavLink = ({ btnText }) => {
     const {setHiddenMenu, activeLink, setActiveLink} = useContext(MovieContext);
 
     return (
         <button
-        style={{ color: activeLink === btnText ? "#690AAF" : "#fff" }}
+        style={{ /*color: activeLink === btnText ? "#690AAF" : "#fff"*/ }}
           css={styles}
           onClick={() => {
             setActiveLink(btnText);
@@ -20,6 +22,8 @@ const HeroNavLink = ({ btnText }) => {
         </button>
       );
     };
+
+// css styles
 
 const styles = css`
     border: none;

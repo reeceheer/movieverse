@@ -2,7 +2,7 @@
 /** @jsxRuntime classic */
 import { css, jsx } from "@emotion/core";
 
-
+// Navigation Logo (moviverse text)
 
 const HeroNavLogo = () => <a href="/"> <h2 css={styles} src="">movieverse</h2></a> 
 

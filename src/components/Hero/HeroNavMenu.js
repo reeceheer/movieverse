@@ -5,6 +5,8 @@ import HeroNavLink from "./HeroNavLink";
 import { useContext } from "react";
 import { MovieContext } from "../../Context/MovieContext";
 
+// function to Create the Navbar pages using buttons
+
 const HeroNavMenu = () => {
     const {hiddenMenu} = useContext(MovieContext);
 
@@ -22,6 +24,8 @@ const HeroNavMenu = () => {
     </div>
     );
 };
+
+// styles for Nav Menu buttons
 
 const styles = css`
   display: flex;

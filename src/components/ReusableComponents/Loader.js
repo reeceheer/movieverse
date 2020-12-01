@@ -2,7 +2,11 @@
 /** @jsxRuntime classic */
 import { css, jsx } from "@emotion/core";
 
+// function for a Loader which loads the Movies for when clicking next Page on All Movies page
+
 const Loader = () => <div css={styles} className="loader"></div>;
+
+// css styles for loading
 
 const styles = css`
   position: absolute;

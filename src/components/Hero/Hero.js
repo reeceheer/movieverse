@@ -5,6 +5,8 @@ import HeroNav from "./HeroNav";
 import Output from "../Output/Output";
 
 
+// function to display the Navbar and the Popular Movie output onto the Popular Page
+
 const Hero = () => {
     return(
     <body className="PopularBody">
@@ -15,6 +17,8 @@ const Hero = () => {
     </body>
     );
 };
+
+// styling for the Popular page
 
 const styles = css`
     width: 100%;

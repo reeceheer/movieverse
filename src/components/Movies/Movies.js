@@ -6,6 +6,8 @@ import { MovieContext } from "../../Context/MovieContext";
 import Container from "../ReusableComponents/Container";
 import Loader from "../ReusableComponents/Loader";
 
+// function to display the All of the Movies from the movie database API with images, title and ratings also including the search error if movies are not found
+
 const Movies = () => {
     const { movies, isLoading } = useContext(MovieContext);
 
@@ -30,6 +32,8 @@ const Movies = () => {
         </div>
     );
 };
+
+// css for All Movies
 
 const styles = css`
   width: 100%;

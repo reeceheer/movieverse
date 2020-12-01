@@ -8,10 +8,13 @@ import Popular from "../Popular/Popular";
 import Movies from "../Movies/Movies";
 import MoviesButton from "../Movies/MoviesButton";
 
+// function to output the movies onto different pages when the link is clicked using activeLink
+
 const Output = () => {
     const {activeLink} = useContext(MovieContext);
 
-/* WHEN POPULAR IS CLICKED GETS POPULAR MOVIES FROM API USING FUCNTION IN Popular.js */
+/* WHEN Popular IS CLICKED GETS POPULAR MOVIES FROM API USING FUCNTION IN Popular.js */
+/* WHEN All Movies IS CLICKED GETS ALL MOVIES FROM API USING FUCNTION IN Movies.js and MoviesButton.js */
     return(
         <div css={styles} className="output">
             {activeLink === "Popular" && (
@@ -28,6 +31,8 @@ const Output = () => {
         </div>
     );
 };
+
+// css styles for pages
 
 const styles = css`
   width: 100%;

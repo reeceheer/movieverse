@@ -3,6 +3,7 @@ import { MovieState } from "../Context/MovieContext";
 import HeroNav from '../components/Hero/HeroNav';
 import '../home.css';
 
+// function to create the Homepage and add Navbar, images and a button
 
 const Home = () => {
   return (

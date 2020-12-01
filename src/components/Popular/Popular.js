@@ -5,6 +5,9 @@ import { useContext } from "react";
 import { MovieContext } from "../../Context/MovieContext";
 import Container from "../ReusableComponents/Container";
 
+// function to display the Popular movies from the movie database API with images, title and ratings 
+
+
 const Popular = () => {
     const {popularMovies} = useContext(MovieContext);
 
@@ -22,6 +25,8 @@ const Popular = () => {
         </div>
     );
 };
+
+// css styles
 
 const styles = css`
   width: 100%;

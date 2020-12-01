@@ -5,11 +5,10 @@ import Container from "../ReusableComponents/Container";
 import { MovieContext } from "../../Context/MovieContext";
 import React, { useContext } from "react";
 
-
+// function to make the Previous and Next buttons work on the All Movies Page
 
 const MoviesButton = () => {
     const { newPage, currentPage, showButton } = useContext(MovieContext);
-
 
     return (
         <div css={styles} className="moviesButton">
@@ -32,6 +31,8 @@ const MoviesButton = () => {
         </div>
       );
     };
+
+// css for the buttons and page
 
     const styles = css`
   width: 100%;

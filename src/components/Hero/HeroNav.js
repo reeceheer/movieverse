@@ -9,6 +9,8 @@ import HeroNavMenu from './HeroNavMenu';
 import HeroNavSearch from './HeroNavSearch';
 
 
+// function to bring the Navbar all togther, with the NavLogo (movieverse text), NavMenu (Popular, All Movies and About Page) and NavSearch (search bar for movies)
+
 const HeroNav = () => {
     const { hiddenMenu, setHiddenMenu } = useContext(MovieContext);
 

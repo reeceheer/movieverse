@@ -1,10 +1,11 @@
 
+
+/* css for home page */
+
 body {
     width: 100%;
     min-height: 100vh;
 }
-
-
     h1{
         padding-left: 220px;
         padding-top: 260px;
@@ -24,13 +25,19 @@ body {
         color: #ffffff;
     }
 
+/* css home page background image */
+
     body.HomeBody {
         background-image: url(bg.svg);
       }
       
+/* css popular page background image */
+
     body.PopularBody {
         background-image: url(popular.svg);
     }
+
+/* css about page background image */
 
     body.AboutBody {
         background-image: url(about.svg);

@@ -4,9 +4,10 @@ import { css, jsx } from "@emotion/core";
 import { useContext } from "react";
 import { MovieContext } from "../../Context/MovieContext";
 
+// function to allow the search bar to go onto only the All Movies page and not the Popular and Other Pages 
+
 const HeroNavSearch = () => {
     const {search, setSearch, handleSearch, activeLink} = useContext(MovieContext);
-
 
     return (
         <form css={styles} onSubmit={handleSearch}>
@@ -21,6 +22,8 @@ const HeroNavSearch = () => {
         </form>
       );
     };
+
+    // styles for search button
 
 const styles = css`
     height: 40px;

@@ -8,6 +8,8 @@ import AllMovies from "./Pages/AllMovies";
 import Movies from "./Pages/Movies";
 import Home from "./Pages/Home";
 
+// function to route the pages together using react router
+
 const App = () => {
   return (
     <Router>

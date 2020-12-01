@@ -9,7 +9,7 @@ export const MovieState = ({ children }) => {
    /* states */
     const [isLoading, setIsLoading] = useState(false);
     const [hiddenMenu, setHiddenMenu] = useState(true);
-    const [activeLink, setActiveLink] = useState("Popular"); /* Popular set to active Link so movies can show up on popular page when clicked */
+    const [activeLink, setActiveLink] = useState("Popular"); 
     const [popularMovies, setPopularMovies] = useState([]);
     const [search, setSearch] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
@@ -19,7 +19,7 @@ export const MovieState = ({ children }) => {
     /* function to get popular movies from the movie database using my API key */
     const getPopularMovies = async () => {
        const popularMoviesResponse = await fetch(
-          `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=4` /* fetches the API_KEY state to get access to the movies in tmbd */
+          `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=5` /* fetches the API_KEY state to get access to the movies in tmbd */
           );
           
     const popularMoviesData = await popularMoviesResponse.json();
@@ -79,6 +79,7 @@ export const MovieState = ({ children }) => {
       return () => clearTimeout(loadingTimeout);
     },[movies, currentPage])
    
+    // returns the states
 
    return (
       <MovieContext.Provider 
